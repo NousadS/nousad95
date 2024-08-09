@@ -1,4 +1,16 @@
 window.addEventListener("load", () => {
+    function getCurrentPath() {
+        let path = localStorage.getItem("path");
+
+        if (!path) {
+            path = "N:";
+
+
+        }
+
+        return path
+    }
+
     const path = {
         fileSystem: {
             "N:": {

@@ -7,7 +7,8 @@
     white-space: pre;
     text-wrap: pretty;
 
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .content-input {
