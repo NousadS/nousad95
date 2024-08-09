@@ -176,7 +176,7 @@ window.addEventListener("load", () => {
         }
     };
 
-    commands.input.value = "help";
+    commands.input.value = new URLSearchParams(window.location.search).get("cmd")+"\n" || "help\n";
     commands.input.addEventListener("input", () => commands.updateConsole());
     commands.input.focus();
 
