@@ -46,5 +46,3 @@ def system(path):
         return render_template(f"{clear_path}.html", title="N:/"+path, path=clear_path)
     except jinja2.exceptions.TemplateNotFound:
         return render_template("unknown.html", title="N:/"+path, path="unknown")
-
-app.run(host=APP_HOST, port=APP_PORT, debug=APP_DEBUG)
