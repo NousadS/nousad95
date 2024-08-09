@@ -122,7 +122,7 @@ window.addEventListener("load", () => {
         },
 
         handleCommand(command) {
-            var [cmd, ...args] = command.split(" ");
+            var [cmd, ...args] = command.trim().split(" ");
             cmd = cmd.toLowerCase();
         
             if (this.integrated[cmd]) {
