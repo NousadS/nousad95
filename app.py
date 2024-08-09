@@ -30,7 +30,7 @@ def token():
     if token := request.args.get("token"):
         response["available_level"] = 1
         if token.startswith("cat.") and len(token := token[4:].split(":")) == 2:
-            response["available_level"] = SECRET_KEY
+            response["available_level"] = 2
             if token[0] in TOKENS and token[1] == hashlib.md5((token[0]+TOKENS[token[0]]+SECRET_KEY).encode()).hexdigest():
                 response["available_level"] = 3
                 response["available"] = True
