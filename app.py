@@ -19,5 +19,3 @@ app.secret_key = APP_SECRET_KEY
 @app.route("/")
 def index():
     return render_template("index.html")
-
-app.run(host=APP_HOST, port=APP_PORT, debug=APP_DEBUG)
