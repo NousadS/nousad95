@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ssn-site"
+version = "0.1a"
+description = "Site for SSN (Nedohackers)."
+authors = ["nousad <nousad.cat@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
