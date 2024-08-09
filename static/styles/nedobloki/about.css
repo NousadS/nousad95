@@ -1,0 +1,18 @@
+.youtube-wrapper {
+    width: 50dvw;
+    height: 25dvw;
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.youtube {
+    width: 49,9dvw;
+    height: 24.9dvw;
+
+    border: 0px solid #000000;
+}

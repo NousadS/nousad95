@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.open-button {
+    padding: 1% 5%;
+    
+    border: 2px solid #0068d700;
+    background-color: #e1e1e1;
+    
+    transition: 0.5s border ease;
+    
+    cursor: pointer;
+
+    transform: scale(0.75);
+
+    margin: 3%;
+}
+
+.open-button:hover, .open-button:active {
+    border: 2px solid #0068d7;
+}

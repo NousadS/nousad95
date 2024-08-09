@@ -1,0 +1,44 @@
+.content-output {
+    position: absolute;
+
+    width: 50dvw;
+    height: 25dvw;
+
+    white-space: pre;
+    text-wrap: pretty;
+
+    /* overflow-y: scroll; */
+}
+
+.content-input {
+    position: absolute;
+
+    padding: 0;
+    border: none;
+    outline: none;
+
+    width: 50dvw;
+    height: 25dvw;
+
+    background-color: #ffffff00;
+    color: #00000000;
+
+    user-select: none;
+    resize: none;
+}
+
+console-gray {
+    color: #808080;
+}
+
+console-orange {
+    color: #ffa500;
+}
+
+console-blue {
+    color: #0096FF;
+}
+
+console-italic {
+    font-style: italic;
+}
