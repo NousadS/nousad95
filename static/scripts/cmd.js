@@ -7,6 +7,9 @@ window.addEventListener("load", () => {
                 "nedobloki": {
                     "about.exe": "/nedobloki/about.exe",
                     "download.exe": "/nedobloki/download.exe",
+                },
+                "site": {
+                    "about.exe": "/site/about.exe",
                 }
             }
         },
