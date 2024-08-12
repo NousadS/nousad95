@@ -103,9 +103,9 @@
 }
 
 .console .content .print iframe {
-    width: 30%;
-    aspect-ratio: 2 / 1;
-
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    
     border: none;
 }
 
