@@ -1,7 +1,7 @@
 const localization = {
     437: {
         defaults: {
-            header: "Nousad Command Line <c-bb>[Version 1.0]</c-bb>",
+            header: "Nousad Command Line <c-bb>[Version 2042.1]</c-bb>",
             copyright: "<c-bb>(ɔ)</c-bb> Nousad <c-y>Cat</c-y>poration. <c-it>All rights are not reserved.</c-it>",
 
             title: "Nousad Command Line",
@@ -19,7 +19,7 @@ const localization = {
             cls: {},
             color: {},
             dir: {
-                directory: "Directory:",
+                directory: "Directory of:",
 
                 file: "FILE",
                 folder: "FOLD",
@@ -61,6 +61,72 @@ const localization = {
                 help: "Provides Help information for Nousad commands.",
                 pause: "Suspends processing of a batch file and displays a message.",
                 title: "Sets the window title for a NCL.EXE session.",
+            },
+            title: {},
+        }
+    },
+    866: {
+        defaults: {
+            header: "Nousad Command Line <c-bb>[Version 2042.1]</c-bb>",
+            copyright: "<c-bb>(ɔ)</c-bb> Nousad <c-y>Cat</c-y>poration. <c-it>All rights are not reserved.</c-it>",
+
+            title: "Nousad Командная Строка",
+        },
+        commands: {
+            not_found: "не является внутренней или внешней командой, исполняемой программой или пакетным файлом.",
+
+            cd: {
+                not_found: "Системе не удается найти указанный путь.",
+            },
+            chcp: {
+                active: "Текущая кодовая страница",
+                invalid: "Указана недопустимая кодовая страница.",
+            },
+            cls: {},
+            color: {},
+            dir: {
+                directory: "Содержимое папки:",
+
+                file: "FILE",
+                folder: "FOLD",
+            },
+            echo: {},
+            help: {
+                not_found: "не является внутренней или внешней командой.",
+
+                cd: "Вывод имени либо смена текущей папки.",
+                chcp: {
+                    command: "Вывод либо установка активной кодовой страницы.",
+
+                    actives: "437 - Английский        866 - Русский",
+                },
+                cls: "Очистка экрана.",
+                color: {
+                    command: "Установка цветов переднего плана и фона, используемых по умолчанию.",
+
+                    black: "черный",
+                    blue: "синий",
+                    cyan: "голубой",
+                    green: "зеленый",
+                    purple: "фиолетовый",
+                    red: "красный",
+                    white: "белый",
+                    yellow: "желтый",
+
+                    bright_black: "Ярко-черный",
+                    bright_blue: "Ярко-синий",
+                    bright_cyan: "Ярко-голубой",
+                    bright_green: "Ярко-зеленый",
+                    bright_purple: "Ярко-фиолетовый",
+                    bright_red: "ярко-красный",
+                    bright_white: "Ярко-белый",
+                    bright_yellow: "ярко-желтый",
+                },
+                dir: "Вывод списка файлов и подпапок из указанной папки.",
+                echo: "Отображает сообщения и переключает режим отображения команд на экране.",
+                help: "Выводит справочную информацию о командах Windows.",
+                pause: "Приостанавливает выполнение пакетного файла и выводит сообщение.",
+                title: "Назначает заголовок окна для сеанса NCL.EXE.",
             },
             title: {},
         }

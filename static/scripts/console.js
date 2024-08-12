@@ -41,16 +41,18 @@ function inputKeydown(event) {
         input.value = "";
     }
 
-    print.classList.remove(sessionParameters.color[0]);
-    print.classList.remove(sessionParameters.backgroundColor[0]);
-
-    print.classList.add(sessionParameters.color[1]);
-    print.classList.add(sessionParameters.backgroundColor[1]);
-
-    if (sessionParameters.lastPrint != print.innerHTML) {
+    if (sessionParameters.lastPrint !== `${output.innerHTML}${inputEscape(input.value)}`) {
+        console.log("ss");
+        
         sessionParameters.lastPrint = print.innerHTML;
 
         print.innerHTML = `${output.innerHTML}${inputEscape(input.value)}`;
+
+        print.classList.remove(sessionParameters.color[0]);
+        print.classList.remove(sessionParameters.backgroundColor[0]);
+
+        print.classList.add(sessionParameters.color[1]);
+        print.classList.add(sessionParameters.backgroundColor[1]);
 
         print.scroll({
             top: 100000,
