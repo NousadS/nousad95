@@ -22,17 +22,19 @@ function inputKeydown(event) {
     if (event && event.key == "Enter") {
         event.preventDefault();
 
-        let [command, ...args] = inputEscape(input.value).split(" ");
-        let pretty_command = command.toLowerCase();
+        let [raw_command, ...raw_args] = inputEscape(input.value).split(" ");
+        
+        let command = raw_command.toLowerCase();
+        let args = raw_args.filter((arg) => arg != "");
 
         let command_response = ""; 
 
-        if (pretty_command == "") {
+        if (command == "") {
             command_response = "";
-        } else if (integratedCommands[pretty_command]) {
-            command_response = integratedCommands[pretty_command](args);
-        } else if (Object.keys(getCurrentDir()).includes(pretty_command) && typeof getCurrentDir()[pretty_command] === "string") {
-            command_response = "\n"+document.querySelector(fileSystemPrependSelector+getCurrentDir()[pretty_command]).innerHTML+"\n";
+        } else if (integratedCommands[command]) {
+            command_response = integratedCommands[command](args);
+        } else if (Object.keys(getCurrentDir()).includes(command) && typeof getCurrentDir()[command] === "string") {
+            command_response = "\n"+document.querySelector(fileSystemPrependSelector+getCurrentDir()[command]).innerHTML+"\n";
         } else {
             command_response = `\n<c-bu><c-it>${command}</c-it></c-bu> ${localization[sessionParameters.codePage].commands.not_found}\n`;
         }
