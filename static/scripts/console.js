@@ -47,10 +47,10 @@ function inputKeydown(event) {
     print.classList.add(sessionParameters.color[1]);
     print.classList.add(sessionParameters.backgroundColor[1]);
 
-    print.innerHTML = `${output.innerHTML}${inputEscape(input.value)}`;
-
     if (sessionParameters.lastPrint != print.innerHTML) {
         sessionParameters.lastPrint = print.innerHTML;
+
+        print.innerHTML = `${output.innerHTML}${inputEscape(input.value)}`;
 
         print.scroll({
             top: 100000,
