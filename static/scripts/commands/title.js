@@ -1,7 +1,7 @@
 function title(args) {
     let response = ``;
 
-    document.querySelector(".console .title .name").innerHTML = args.length == 1 && args[0] != "" ? args[0] : 
+    document.querySelector(".console .title .name").innerHTML = args.length >= 1 ? args.join(" ") : 
         localization[sessionParameters.codePage].defaults.title;
 
     return response;
