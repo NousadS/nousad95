@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="Your page description here">
+        <meta name="keywords" content="cmd, command, line, programs, nousad, ssn, nedohackers, lite">
+        <meta name="author" content="Nousad">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+
+        <link rel="stylesheet" href="/static/styles/index.css">
+        <link rel="stylesheet" href="/static/styles/console.css">
+        <link rel="stylesheet" href="/static/styles/popup.css">
+        <link rel="stylesheet" href="/static/styles/style-prompt.css">
+
+        <script src="/static/scripts/index.js" defer></script>
+        <script src="/static/scripts/session.js" defer></script>
+        <script src="/static/scripts/file-system.js" defer></script>
+        <script src="/static/scripts/messages.js" defer></script>
+
+        <script src="/static/scripts/start.js" defer></script>
+        <script src="/static/scripts/popup.js" defer></script>
+        <script src="/static/scripts/commands.js" defer></script>
+
+        <script src="/static/scripts/commands/cd.js" defer></script>
+        <script src="/static/scripts/commands/chcp.js" defer></script>
+        <script src="/static/scripts/commands/cls.js" defer></script>
+        <script src="/static/scripts/commands/color.js" defer></script>
+        <script src="/static/scripts/commands/dir.js" defer></script>
+        <script src="/static/scripts/commands/echo.js" defer></script>
+        <script src="/static/scripts/commands/help.js" defer></script>
+        <script src="/static/scripts/commands/title.js" defer></script>
+
+        <script src="/static/scripts/console.js" defer></script>
+
+
+        <link rel="icon" href="/static/images/win.png" type="image/png">
+        <title>Nousad95</title>
+    </head>
+    <body>
+        <div class="console not-started">
+            <div class="title">
+                <img src="/static/images/null.png" alt="N" class="icon">
+                <div class="name"></div>
+            </div>
+            <div class="content">
+                <div class="print">Press any key to start...</div>
+
+                <div class="content-hide">
+                    <input type="text" class="input">
+                    <div class="output"></div>
+                </div>
+            </div>
+        </div>
+
+        <template class="initial-popup">
+            <div class="popup">
+                <div class="title">
+                    <img src="/static/images/question.png" alt="?" class="icon">
+                    <div class="name">Help</div>
+                </div>
+                <div class="content">To help, write <c-g><c-bo>help</c-bo></c-g> command.</div>
+            </div>
+        </template>
+
+        <template class="content-template about-mp4">YAY</template>
+        <template class="content-template nedobloki_about-mp4">UAU</template>
+    </body>
+</html>

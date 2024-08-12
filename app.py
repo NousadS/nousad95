@@ -18,7 +18,7 @@ app.secret_key = SECRET_KEY
 
 @app.route("/")
 def index():
-    return redirect("/system")
+    return render_template("index.html")
 
 @app.route("/token/")
 def token():
@@ -36,13 +36,3 @@ def token():
                 response["available"] = True
     
     return Response(json.dumps(response), mimetype="application/json")
-
-@app.route("/system/", defaults={ "path": "cmd.exe" })
-@app.route("/system/<path:path>")
-def system(path):
-    clear_path = path.replace(".exe", "")
-    
-    try:
-        return render_template(f"{clear_path}.html", title="N:/"+path, path=clear_path)
-    except jinja2.exceptions.TemplateNotFound:
-        return render_template("unknown.html", title="N:/"+path, path="unknown")

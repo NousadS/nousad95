@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Greenscr";
+    src: url("/static/font/Greenscr.ttf");
+}
+
+@font-face {
+    font-family: "Tiny5";
+    src: url("/static/font/Tiny5.ttf");
+}
+
+:root {
+    --black-deep: #000000;
+
+    --black: #0c0c0c;
+    --blue: #0037da;
+    --cyan: #3a96dd;
+    --green: #13a10e;
+    --purple: #881798;
+    --red: #c50f1f;
+    --white: #cccccc;
+    --yellow: #c19c00;
+    
+    --bright-black: #767676;
+    --bright-blue: #3b78ff;
+    --bright-cyan: #61d6d6;
+    --bright-green: #16c60c;
+    --bright-purple: #b4009e;
+    --bright-red: #e74856;
+    --bright-white: #c0c7c8;
+    --bright-yellow: #f9f1a5;
+
+    --font-family: Greenscr, Tiny5, 'Courier New', Courier, Consolas, "Cascadia Mono", "Cascadia Code", monospace;
+
+    --foreground: var(--white);
+    --background: var(--black);
+    --background-deep: var(--black-deep);
+
+    --border-radius: 10px;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100dvw;
+    height: 100dvh;
+
+    background-color: var(--background-deep);
+    color: var(--foreground);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    overflow: hidden;
+}

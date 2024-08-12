@@ -1,0 +1,60 @@
+.popup {
+    width: 40dvh;
+    height: 25dvh;
+
+    position: absolute;
+
+    top: calc(( 100dvh - 25dvh ) / 2);
+    left: calc(( 100dvw - 40dvh ) / 2);
+
+    background-color: var(--bright-white);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    user-select: none;
+    
+    transition: opacity 1s ease-in;
+}
+
+.popup .title {
+    width: 100%;
+    height: 5dvh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    background-color: var(--blue);
+}
+
+.popup .title .icon {
+    height: 70%;
+    aspect-ratio: 1 / 1;
+
+    margin: 0% 2%;
+}
+
+.popup .title .name {
+    height: 100%;
+    font-size: 0.75em;
+
+    vertical-align: middle;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.popup .content {
+    color: var(--black-deep);
+
+    padding: 1dvh;
+}
