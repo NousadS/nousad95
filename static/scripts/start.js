@@ -39,11 +39,13 @@ function shutdownEvent(event) {
     input.removeEventListener("keydown", inputKeydown);
     clearInterval(sessionParameters.keydownInterval);
 
+    window.removeEventListener("beforeunload", shutdownEvent);
+
     document.querySelector(".console").style.opacity = "0";
 
     sessionParameters.shutdownAudio.play();
 
-    event.preventDefault();
+    if (event) event.preventDefault();
 }
 
 window.addEventListener("keydown", startupEvent);

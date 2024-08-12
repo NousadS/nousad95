@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "ssn-site"
-version = "2.0"
+name = "nousad95"
+version = "1.1"
 description = "Site for SSN (Nedohackers)."
 authors = ["nousad <nousad.cat@gmail.com>"]
 license = "MIT License"

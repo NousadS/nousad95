@@ -25,6 +25,7 @@ const localization = {
                 folder: "FOLD",
             },
             echo: {},
+            exit: {},
             help: {
                 not_found: "is not recognized as an internal or external command.",
 
@@ -58,6 +59,7 @@ const localization = {
                 },
                 dir: "Displays a list of files and subdirectories in a directory.",
                 echo: "Displays messages, or turns command echoing on or off.",
+                exit: "Quits the NCL.EXE program (command interpreter).",
                 help: "Provides Help information for Nousad commands.",
                 pause: "Suspends processing of a batch file and displays a message.",
                 title: "Sets the window title for a NCL.EXE session.",
@@ -124,6 +126,7 @@ const localization = {
                 },
                 dir: "Вывод списка файлов и подпапок из указанной папки.",
                 echo: "Отображает сообщения и переключает режим отображения команд на экране.",
+                exit: "Завершает работу программы NCL.EXE (интерпретатора командных строк).",
                 help: "Выводит справочную информацию о командах Windows.",
                 pause: "Приостанавливает выполнение пакетного файла и выводит сообщение.",
                 title: "Назначает заголовок окна для сеанса NCL.EXE.",

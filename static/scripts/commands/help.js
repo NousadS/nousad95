@@ -8,6 +8,7 @@ function help(args) {
         response += `<c-y><c-bo>COLOR</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.color.command}\n`;
         response += `<c-y><c-bo>DIR  </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.dir}\n`;
         response += `<c-y><c-bo>ECHO </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.echo}\n`;
+        response += `<c-y><c-bo>EXIT </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.exit}\n`;
         response += `<c-y><c-bo>HELP </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.help}\n`;
         // response += `<c-y><c-bo>PAUSE</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.pause}\n`;
         response += `<c-y><c-bo>TITLE</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.title}\n`;
@@ -51,8 +52,9 @@ function help(args) {
             response += `<c-y><c-bo>CHCP </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.chcp.command}\n`;
             response += `<c-y><c-bo>CLS  </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.cls}\n`;
             response += `<c-y><c-bo>COLOR</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.color.command}\n`;
-            response += `<c-y><c-bo>DIR  </c-bo></c-y>    D${localization[sessionParameters.codePage].commands.help.dir}\n`;
+            response += `<c-y><c-bo>DIR  </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.dir}\n`;
             response += `<c-y><c-bo>ECHO </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.echo}\n`;
+            response += `<c-y><c-bo>EXIT </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.exit}\n`;
             response += `<c-y><c-bo>HELP </c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.help}\n`;
             // response += `<c-y><c-bo>PAUSE</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.pause}\n`;
             response += `<c-y><c-bo>TITLE</c-bo></c-y>    ${localization[sessionParameters.codePage].commands.help.title}\n`;
