@@ -1,0 +1,18 @@
+{
+    "NS-SESSION": {
+        "version": "1.0",
+        "parameters": {
+            "console": {
+                "background": "black",
+                "foreground": "white",
+                "codePage": "437",
+            },
+            "bootScreen": {
+                "image": "",
+            },
+        },
+    },
+    "NS-FILESYSTEM": {
+
+    },
+}

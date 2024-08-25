@@ -1,0 +1,61 @@
+{
+    "type": "NS-SESSION",
+    
+    
+    "schemes": {
+    },
+    "files": {
+        "type": "NS-FILESYSTEM",
+        "version": "1.0",
+        "drives": [
+            {
+                "type": "drive",
+                "name": "N:",
+                "content": [
+                    {
+                        "type": "directory",
+                        "headers": {
+                            "name": "projects"
+                        },
+                        "times": {
+                            "created": "2024-08-25T13:00:00Z",
+                            "modified": "2024-08-25T13:30:00Z",
+                        },
+                        "attributes": {
+                            "read_only": false,
+                            "hidden": false,
+                            "system": false,
+                        },
+                        "content": [
+                            {
+                                "type": "file",
+                                "headers": {
+                                    "name": "readme",
+                                    "extension": "md",
+                                    "filetype": "text/markdown",
+                                },
+                                "times": {
+                                    "created": "2024-08-25T13:05:00Z",
+                                    "modified": "2024-08-25T13:35:00Z",
+                                },
+                                "attributes": {
+                                    "read_only": false,
+                                    "hidden": false,
+                                    "system": false,
+                                },
+                                "content": "# Project Documentation\nThis is the readme file for the project.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                "type": "drive",
+                "name": "X:",
+                "content": [
+                    
+                ],
+            },
+        ],
+    }
+}

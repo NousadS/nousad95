@@ -1,15 +1,19 @@
 [tool.poetry]
-name = "nousad95"
-version = "1.1"
-description = "Site for SSN (Nedohackers)."
+name = "nsdos"
+version = "1.0"
+description = "Profile site from Nousad. In style of MS-DOS."
 authors = ["nousad <nousad.cat@gmail.com>"]
 license = "MIT License"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-flask = "^3.0.3"
 python-dotenv = "^1.0.1"
+fastapi = "^0.112.2"
+uvicorn = "^0.30.6"
+libsass = "^0.23.0"
+pendulum = "^3.0.0"
+jinja2 = "^3.1.4"
 
 
 [build-system]

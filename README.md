@@ -1,8 +1,6 @@
-# <img src="https://raw.githubusercontent.com/NousadS/nousad95/master/static/images/win-readme.png" width="64px" height="32px"> Nousad95
+#      <img src="https://raw.githubusercontent.com/NousadS/nsdos/master/static/images/nsdos.png" width="64px" height="64px">      NS-DOS
 
-### *Сайт для ССН (Nedohackers)*
-
-**Версия:** 1.1 \
+**Версия:** 1.0 \
 **Лицензия:** MIT License
 
 **Автор:** nousad *<nousad.cat@gmail.com>*
